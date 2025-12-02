@@ -19,12 +19,12 @@ This flake packages fontspector for Nix with modifications to make it work in sa
 
 Try it without installing:
 ```bash
-nix run github:yourusername/fontspector-nix -- --help
+nix run github:jul-sh/fontspector-nix -- --help
 ```
 
 Build and install:
 ```bash
-nix build github:yourusername/fontspector-nix
+nix build github:jul-sh/fontspector-nix
 ./result/bin/fontspector --help
 ```
 
@@ -33,7 +33,7 @@ Add to your `flake.nix`:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    fontspector.url = "github:yourusername/fontspector-nix";
+    fontspector.url = "github:jul-sh/fontspector-nix";
   };
 
   outputs = { self, nixpkgs, fontspector }: {
